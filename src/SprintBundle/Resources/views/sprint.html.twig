@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block section %}
+
+
+<h1>Sprint</h1>
+
+{% if master_access %}
+<a href="{{ path ('delete') }}">
+Delete
+</a>
+{% endif %}
+
+<p>
+Sprint progression : {{ pourcentage }} % of {{ day }} day
+</p>
+
+<h2>Goal : {{ goal }}</h2>
+<p>Description : {{ description }}</p>
+
+{% endblock %}

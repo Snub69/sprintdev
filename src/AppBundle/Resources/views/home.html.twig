@@ -1,0 +1,61 @@
+{% extends '@AppBundle/Resources/views/navigation.html.twig' %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block onlinestylesheets %}
+<style>
+html {
+position: absolute !important;
+height: 100% !important;
+width: 100% !important;
+background-image:url({{ asset('image/SYqwUoI.jpg') }});
+
+}
+body {
+position: absolute !important;
+height: 100% !important;
+width: 100% !important;
+top: 0 !important;
+left: 0 !important;
+background-image:url({{ asset('image/SYqwUoI.jpg') }});
+background-repeat: no-repeat;
+background-size: cover;
+	
+}
+
+</style>
+{% endblock %}
+
+{% block section %}
+
+<section>
+
+<h1>Sprint-io</h1>
+<p>Run your sprint</p>
+
+{% if global_access %}
+           <h1>
+              <a href="{{path ('sprint') }}" class= "btn btn-primary col-xs-12 blockintro">
+                   Sprint
+                 </a>
+           </h1>
+{% else %}
+
+       <a href="{{ path('auth') }}" class="coolbutton col-xs-8 col-xs-offset-2 blockintro log">
+                Sign in
+             </a>
+
+
+       <a href="{{ path('join') }}" class="coolbutton col-xs-8 col-xs-offset-2 blockintro log">
+                Sign up
+             </a>
+
+{% endif %}
+
+</section>
+{% endblock %}
+
+{% block footer %}
+<p>Sprint manager in Kanban Board</p>
+{% endblock %}

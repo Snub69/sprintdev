@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block section %}
+
+
+<h1>{{ title }} to Sprint-io</h1>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+
+<p class="pad">Already an account ? Please <a href="{{ path('auth') }}">Sign in</a></p>
+
+{% endblock %}

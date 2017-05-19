@@ -1,0 +1,64 @@
+<?php
+
+namespace SprintBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Sprint
+ *
+ * @ORM\Table(name="sprint", indexes={@ORM\Index(name="user", columns={"user"})})
+ * @ORM\Entity
+ */
+class Sprint
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="goal", type="string", length=64, nullable=false)
+     */
+    private $goal;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255, nullable=false)
+     */
+    private $description;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="day", type="boolean", nullable=false)
+     */
+    private $day;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="time", type="integer", nullable=false)
+     */
+    private $time;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \SprintBundle\Entity\User
+     *
+     * @ORM\ManyToOne(targetEntity="SprintBundle\Entity\User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user", referencedColumnName="id")
+     * })
+     */
+    private $user;
+
+
+}
+

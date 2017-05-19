@@ -1,0 +1,87 @@
+nav{
+width: 100%;
+}
+
+.section {  
+font-family: 'Raleway', sans-serif;
+background: rgba(255, 255, 255, 0.7);
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+text-align: center;
+margin-top: 2em;
+}
+
+.htmlbackground {
+background: #D3E2EB;
+}
+.log {
+box-shadow: 0 8px 15px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+h1 {
+font-size: 3em;
+}
+       
+ .bloclogo {
+width: 4em;
+display: block;
+margin-bottom: 2em;
+text-align: center;
+margin: 2em auto;
+ }
+ 
+ .bloclogo img {
+width: 100% !important; 
+min-height: 2em;
+margin: auto;
+ }
+ 
+.blocksubmit {
+margin-top: 2em;
+}
+
+.blockintro {
+margin-top: 1em;
+margin-bottom: 2em;
+color: white;
+}
+
+form label, form input {
+margin: 0.5em 0;
+}
+
+.baseline {
+clear: both;
+padding:  1em 0 1em 0;
+}
+.logheader {
+text-align: right;
+margin-top: -7em;
+}
+
+footer {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 1em 0;
+background: #E5E5E5;
+text-align: center;
+}
+body {
+background-color: rgba(0, 0, 0, 0);
+text-align: center;
+}
+
+.pad {
+padding: 8em 0 2em 0;
+}
+
+.coolbutton {
+  background: #578DAB;
+  border-color: #e3eaed #578DAB #cedadf;
+  background-image: linear-gradient(to bottom, #84AABE 0%, #578DAB 50%, #578DAB 51%, #aec1ca 100%);
+}
+
+.textwhite {
+color: white;
+}
